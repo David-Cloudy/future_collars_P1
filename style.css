@@ -1,0 +1,273 @@
+:root {
+  --white: #ffffff;
+  --smoke-white: #f1f1f1;
+  --grey: #4e4e4e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.body-container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: var(--grey);
+  padding: 15px 0;
+  color: var(--white);
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .container .nav-items {
+  display: flex;
+  gap: 46px;
+}
+
+.nav-li {
+  cursor: pointer;
+}
+
+.nav-li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-li-disabled {
+  cursor: not-allowed;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shadow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header-text {
+  position: absolute;
+  top: 130px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.header-button {
+  width: 164px;
+  height: 41px;
+  background-color: transparent;
+  border: 3px solid var(--white);
+  color: var(--white);
+  cursor: pointer;
+  transition-property: color background-color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.header-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-button:hover {
+  background-color: var(--white);
+  color: black;
+}
+
+.specialists-section {
+  background-color: var(--smoke-white);
+
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.specialists-section h1 {
+  color: #152d41;
+}
+
+.expert {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  gap: 50px;
+}
+
+.expert:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.expert-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.expert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offer-section {
+  background-color: #405d78;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.offer-section h1 {
+  color: var(--white);
+}
+
+.offer-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding-top: 82px;
+  padding-bottom: 14px;
+}
+
+.service-box {
+  background-color: var(--smoke-white);
+
+  width: 198px;
+  height: 194px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 198px;
+  word-break: break-all;
+
+  -webkit-box-shadow: 6px 18px 24px -6px rgba(1, 1, 16, 1);
+  -moz-box-shadow: 6px 18px 24px -6px rgba(1, 1, 16, 1);
+  box-shadow: 6px 18px 24px -6px rgba(1, 1, 16, 1);
+
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.service-box:hover {
+  transform: scale(1.05);
+}
+
+.dot {
+  position: relative;
+}
+
+.dot::before {
+  content: url(assets/icons/dot.svg);
+  position: absolute;
+  top: -11px;
+  left: -11px;
+}
+
+.dot .new {
+  position: relative;
+}
+
+.dot h3::after {
+  content: "(nowość)";
+  position: absolute;
+  left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #4e4e4e;
+  color: var(--white);
+  margin-top: 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-items {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.footer-li {
+  cursor: pointer;
+}
