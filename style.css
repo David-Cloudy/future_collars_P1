@@ -63,7 +63,7 @@ nav .container {
   align-items: center;
 }
 
-nav .container .nav-items {
+.nav-items {
   display: flex;
   gap: 46px;
 }
@@ -72,7 +72,7 @@ nav .container .nav-items {
   cursor: pointer;
 }
 
-.nav-li a {
+.nav-anchor {
   text-decoration: none;
   color: inherit;
 }
@@ -109,9 +109,11 @@ header img {
 .header-text {
   position: absolute;
   top: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   height: 100vh;
   gap: 50px;
 }
@@ -127,7 +129,7 @@ header img {
   transition: 1s linear;
 }
 
-a .header-button {
+.header-button {
   text-decoration: none;
   color: var(--white);
   font-size: 18px;
@@ -147,7 +149,7 @@ a .header-button {
   padding: 50px 0;
 }
 
-.specialists-section h2 {
+.specialists-header {
   color: #152d41;
 }
 
@@ -185,7 +187,7 @@ a .header-button {
   padding: 50px 0;
 }
 
-.offer-section h2 {
+.offer-header {
   color: var(--white);
 }
 
